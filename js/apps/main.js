@@ -457,15 +457,14 @@
   SWIPER.common.init();
   EVENTS.common.init();
 
-  $('html').on('mousewheel', function () {
-    console.log(111);
-    var top = window.scrollY;
-    if (top < $('#about')[0].offsetTop) {
-      window.scrollTo({
-        top: $('#about')[0].offsetTop,
-        behavior: 'smooth',
-      });
-      window.location.href = '#about';
-    }
-  });
+  // $('html').on('mousewheel', function () {
+  //   var top = window.scrollY;
+  //   if (top < $('#about')[0].offsetTop) {
+  //     window.scrollTo({
+  //       top: $('#about')[0].offsetTop,
+  //       behavior: 'smooth',
+  //     });
+  //     window.location.href = '#about';
+  //   }
+  // });
 })(window, window.jQuery);
